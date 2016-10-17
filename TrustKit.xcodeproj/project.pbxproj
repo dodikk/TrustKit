@@ -20,6 +20,25 @@
 		6B032D401AF1AEC200EAFA69 /* TSKReporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B032D3F1AF1AEB600EAFA69 /* TSKReporterTests.m */; };
 		6B2B06AD1B05154A00FC749E /* TSKBackgroundReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B2B06AC1B05154A00FC749E /* TSKBackgroundReporter.h */; };
 		6B2B06AF1B05157400FC749E /* TSKBackgroundReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2B06AE1B05157400FC749E /* TSKBackgroundReporter.m */; };
+		7E06DFBA1DB53D300011BAEF /* TSKNSURLConnectionDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5F7301BC5ED4A005801D8 /* TSKNSURLConnectionDelegateProxy.m */; };
+		7E06DFBB1DB53D4B0011BAEF /* TSKNSURLSessionDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5F7481BCB535E005801D8 /* TSKNSURLSessionDelegateProxy.m */; };
+		7E06DFBC1DB53D4B0011BAEF /* RSSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5F7411BCB06F4005801D8 /* RSSwizzle.m */; };
+		7E06DFBD1DB53D4B0011BAEF /* TSKReportsRateLimiter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9EBE011B619BBE00CA7EE0 /* TSKReportsRateLimiter.m */; };
+		7E06DFBE1DB53D4B0011BAEF /* TSKBackgroundReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2B06AE1B05157400FC749E /* TSKBackgroundReporter.m */; };
+		7E06DFBF1DB53D4B0011BAEF /* TSKPinFailureReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C15F99F1B16094D00F06C0E /* TSKPinFailureReport.m */; };
+		7E06DFC01DB53D4B0011BAEF /* reporting_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCBD15A1B186D1100CB88AF /* reporting_utils.m */; };
+		7E06DFC11DB53D4B0011BAEF /* vendor_identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C84CC081D6E3C67009B3E7D /* vendor_identifier.m */; };
+		7E06DFC21DB53D4B0011BAEF /* public_key_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE9191D1AEA073C002B29AE /* public_key_utils.m */; };
+		7E06DFC31DB53D4B0011BAEF /* ssl_pin_verifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE919211AEA077F002B29AE /* ssl_pin_verifier.m */; };
+		7E06DFC41DB53D4B0011BAEF /* TSKPinningValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C15F9921B132F9200F06C0E /* TSKPinningValidator.m */; };
+		7E06DFC51DB53D4B0011BAEF /* TrustKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C84806C1A896F660017C155 /* TrustKit.m */; };
+		7E06DFC61DB53D4B0011BAEF /* parse_configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5D98B21CEFF079008E654B /* parse_configuration.m */; };
+		7E06DFC71DB53D5D0011BAEF /* assert.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C84CCBF1D6E5D5A009B3E7D /* assert.c */; };
+		7E06DFC81DB53D5D0011BAEF /* init_registry_tables.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C84CCC11D6E5D5A009B3E7D /* init_registry_tables.c */; };
+		7E06DFC91DB53D5D0011BAEF /* registry_search.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C84CCC31D6E5D5A009B3E7D /* registry_search.c */; };
+		7E06DFCA1DB53D5D0011BAEF /* trie_search.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C84CCC91D6E5D5A009B3E7D /* trie_search.c */; };
+		7E06DFCB1DB53D900011BAEF /* TrustKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C84804C1A896EE30017C155 /* TrustKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E06DFCC1DB53D970011BAEF /* TSKPinningValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C15F9911B132F9200F06C0E /* TSKPinningValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C15F9931B132F9200F06C0E /* TSKPinningValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C15F9911B132F9200F06C0E /* TSKPinningValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C15F9941B132F9200F06C0E /* TSKPinningValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C15F9921B132F9200F06C0E /* TSKPinningValidator.m */; };
 		8C15F9A01B16094D00F06C0E /* TSKPinFailureReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C15F99E1B16094D00F06C0E /* TSKPinFailureReport.h */; };
@@ -308,6 +327,9 @@
 		6B032D3F1AF1AEB600EAFA69 /* TSKReporterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSKReporterTests.m; sourceTree = "<group>"; };
 		6B2B06AC1B05154A00FC749E /* TSKBackgroundReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSKBackgroundReporter.h; path = Reporting/TSKBackgroundReporter.h; sourceTree = "<group>"; };
 		6B2B06AE1B05157400FC749E /* TSKBackgroundReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSKBackgroundReporter.m; path = Reporting/TSKBackgroundReporter.m; sourceTree = "<group>"; };
+		7E06DFB21DB539060011BAEF /* TrustKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TrustKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E06DFB41DB539060011BAEF /* TrustKit-ios-static.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrustKit-ios-static.h"; sourceTree = "<group>"; };
+		7E06DFB61DB539060011BAEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C15F9911B132F9200F06C0E /* TSKPinningValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSKPinningValidator.h; path = Pinning/TSKPinningValidator.h; sourceTree = "<group>"; };
 		8C15F9921B132F9200F06C0E /* TSKPinningValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSKPinningValidator.m; path = Pinning/TSKPinningValidator.m; sourceTree = "<group>"; };
 		8C15F99E1B16094D00F06C0E /* TSKPinFailureReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSKPinFailureReport.h; path = Reporting/TSKPinFailureReport.h; sourceTree = "<group>"; };
@@ -372,6 +394,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7E06DFAE1DB539060011BAEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C8480431A896EE30017C155 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -446,6 +475,15 @@
 			name = Certificates;
 			sourceTree = "<group>";
 		};
+		7E06DFB31DB539060011BAEF /* TrustKit-ios-static */ = {
+			isa = PBXGroup;
+			children = (
+				7E06DFB41DB539060011BAEF /* TrustKit-ios-static.h */,
+				7E06DFB61DB539060011BAEF /* Info.plist */,
+			);
+			path = "TrustKit-ios-static";
+			sourceTree = "<group>";
+		};
 		8C3492901ADCA059001849FD /* domain_registry */ = {
 			isa = PBXGroup;
 			children = (
@@ -487,6 +525,7 @@
 			children = (
 				8C8480491A896EE30017C155 /* TrustKit */,
 				8C8480561A896EE30017C155 /* TrustKitTests */,
+				7E06DFB31DB539060011BAEF /* TrustKit-ios-static */,
 				8C8480481A896EE30017C155 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -502,6 +541,7 @@
 				8C84CBB21D6E0981009B3E7D /* TrustKit.framework */,
 				8C84CBDD1D6E1718009B3E7D /* TrustKit tvOS Tests.xctest */,
 				8CC5D24E1D6E64D10074F515 /* TrustKit.framework */,
+				7E06DFB21DB539060011BAEF /* TrustKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -691,6 +731,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		7E06DFAF1DB539060011BAEF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E06DFCC1DB53D970011BAEF /* TSKPinningValidator.h in Headers */,
+				7E06DFCB1DB53D900011BAEF /* TrustKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C8480441A896EE30017C155 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -798,6 +847,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		7E06DFB11DB539060011BAEF /* TrustKit-ios-static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E06DFB91DB539060011BAEF /* Build configuration list for PBXNativeTarget "TrustKit-ios-static" */;
+			buildPhases = (
+				7E06DFAD1DB539060011BAEF /* Sources */,
+				7E06DFAE1DB539060011BAEF /* Frameworks */,
+				7E06DFAF1DB539060011BAEF /* Headers */,
+				7E06DFB01DB539060011BAEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TrustKit-ios-static";
+			productName = "TrustKit-ios-static";
+			productReference = 7E06DFB21DB539060011BAEF /* TrustKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		8C8480461A896EE30017C155 /* TrustKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C84805D1A896EE30017C155 /* Build configuration list for PBXNativeTarget "TrustKit" */;
@@ -954,6 +1021,9 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = TrustKit;
 				TargetAttributes = {
+					7E06DFB11DB539060011BAEF = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					8C8480461A896EE30017C155 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = D94Z5227S5;
@@ -985,6 +1055,7 @@
 			projectRoot = "";
 			targets = (
 				8C8480461A896EE30017C155 /* TrustKit */,
+				7E06DFB11DB539060011BAEF /* TrustKit-ios-static */,
 				8C8716951B23A91D00267E1D /* TrustKit_Static */,
 				8C8480511A896EE30017C155 /* TrustKitTests */,
 				8CA6CBFC1BAE2ADD00BDA419 /* TrustKit OS X */,
@@ -997,6 +1068,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7E06DFB01DB539060011BAEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C8480451A896EE30017C155 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1079,6 +1157,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7E06DFAD1DB539060011BAEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E06DFC91DB53D5D0011BAEF /* registry_search.c in Sources */,
+				7E06DFC81DB53D5D0011BAEF /* init_registry_tables.c in Sources */,
+				7E06DFC31DB53D4B0011BAEF /* ssl_pin_verifier.m in Sources */,
+				7E06DFBB1DB53D4B0011BAEF /* TSKNSURLSessionDelegateProxy.m in Sources */,
+				7E06DFBF1DB53D4B0011BAEF /* TSKPinFailureReport.m in Sources */,
+				7E06DFC61DB53D4B0011BAEF /* parse_configuration.m in Sources */,
+				7E06DFBD1DB53D4B0011BAEF /* TSKReportsRateLimiter.m in Sources */,
+				7E06DFC21DB53D4B0011BAEF /* public_key_utils.m in Sources */,
+				7E06DFC01DB53D4B0011BAEF /* reporting_utils.m in Sources */,
+				7E06DFC71DB53D5D0011BAEF /* assert.c in Sources */,
+				7E06DFCA1DB53D5D0011BAEF /* trie_search.c in Sources */,
+				7E06DFBA1DB53D300011BAEF /* TSKNSURLConnectionDelegateProxy.m in Sources */,
+				7E06DFBE1DB53D4B0011BAEF /* TSKBackgroundReporter.m in Sources */,
+				7E06DFC11DB53D4B0011BAEF /* vendor_identifier.m in Sources */,
+				7E06DFC41DB53D4B0011BAEF /* TSKPinningValidator.m in Sources */,
+				7E06DFBC1DB53D4B0011BAEF /* RSSwizzle.m in Sources */,
+				7E06DFC51DB53D4B0011BAEF /* TrustKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C8480421A896EE30017C155 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1265,6 +1367,55 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		7E06DFB71DB539060011BAEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "TrustKit-ios-static/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				OTHER_CFLAGS = (
+					"-fembed-bitcode",
+					"-Qunused-arguments",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.datatheorem.TrustKit.TrustKit-ios-static";
+				PRODUCT_NAME = TrustKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7E06DFB81DB539060011BAEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "TrustKit-ios-static/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				OTHER_CFLAGS = (
+					"-fembed-bitcode",
+					"-Qunused-arguments",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.datatheorem.TrustKit.TrustKit-ios-static";
+				PRODUCT_NAME = TrustKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		8C84805B1A896EE30017C155 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1643,6 +1794,10 @@
 					"$(PROJECT_DIR)/TrustKit/Dependencies/domain_registry/ios",
 				);
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-Qunused-arguments",
+					"-fembed-bitcode",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1665,6 +1820,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TrustKit",
 					"$(PROJECT_DIR)/TrustKit/Dependencies/domain_registry/ios",
+				);
+				OTHER_CFLAGS = (
+					"-Qunused-arguments",
+					"-fembed-bitcode",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1849,6 +2008,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7E06DFB91DB539060011BAEF /* Build configuration list for PBXNativeTarget "TrustKit-ios-static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E06DFB71DB539060011BAEF /* Debug */,
+				7E06DFB81DB539060011BAEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		8C8480411A896EE30017C155 /* Build configuration list for PBXProject "TrustKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
